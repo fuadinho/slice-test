@@ -1,0 +1,41 @@
+.info {
+    width: 100%;
+
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 50px;
+        background-color: $color-primary-light;
+
+        @media screen and (min-width: 960px) {
+            flex-wrap: nowrap;
+            margin-bottom: 87px;
+        }
+    }
+
+    &__wrapper {
+        width: 100%;
+    }
+
+    &__box {
+        width: 100%;
+        height: 100%;
+
+        &--two {
+            padding: 10%;
+            text-align: center;
+
+            @media screen and (min-width: 960px) {
+                padding: 20% 36% 20% 14%;
+                text-align: start;
+            }
+        }
+    }
+    &__image {
+        width: 100%;
+        height: 100%;
+    }
+}

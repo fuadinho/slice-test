@@ -1,0 +1,94 @@
+.navigation {
+  max-width: 1920px;
+  padding: 27px 50px;
+  height: 50vh;
+  z-index: 10;
+
+  @media screen and (min-width: 992px) {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    background-color: transparent;
+  }
+
+  &__toggle {
+    position: absolute;
+    top: 23px;
+    right: 20px;
+    cursor: pointer;
+    color: $color-primary;
+    font-size: 24px;
+    z-index: 999;
+
+    @media screen and (min-width: 992px) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    display: inline-block;
+    max-width: 120px;
+  }
+
+  &__image {
+    width: 100px;
+
+    @media screen and (min-width: 960px) {
+        width: 144px;
+        height: 26px;
+    }
+  }
+
+  &__menu {
+    display: none;
+
+    @media screen and (min-width: 992px) {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    padding-top: 20px;
+    color: $color-primary;
+    font-family: "Open Sans";
+    font-size: 11px;
+
+    @media screen and (min-width: 992px) {
+      margin: 20px 20px;
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-top: 20px;
+
+      @media screen and (min-width: 992px) {
+        padding-left: 20px;
+        margin-left: 23px;
+        padding-top: 0;
+      }
+    }
+
+    &:hover:not(:last-child) {
+      color: $color-txt-dark;
+    }
+  }
+}
+
+.active {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $color-secondary;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  z-index: 99;
+}

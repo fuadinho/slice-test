@@ -1,0 +1,27 @@
+.about {
+    width: 100%;
+    background-color: $color-primary;
+
+    &__container {
+        display: block;
+        width: 100%;
+        max-width: 1920px;
+        height: 100%;
+        margin: 0 auto;
+
+        @media screen and (min-width: 960px) {
+            padding: 0 3%;
+        }
+    }
+
+    &__content {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10%;
+
+        @media screen and (min-width: 960px) {
+            padding: 5% 23% 11%;
+        }
+    }
+}
