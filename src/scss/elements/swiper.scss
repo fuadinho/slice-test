@@ -47,19 +47,16 @@
 .slider-wrapper {
     display: flex;
 }
-.swiper-slide{
-    min-width: 80%;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    font-size: 50px;
-    padding-left: 55px;
-
-}
 
 .slide {
     display: flex;
     flex-direction: row;
+    min-width: 80%;
+    height: 500px;
+    align-items: center;
+    font-size: 50px;
+    padding-left: 55px;
+    margin-left: 60px;
 
 }
 
@@ -82,5 +79,5 @@
 }
 
 .arrow-button-next {
-    margin-right: 40px;
+    margin-right: 140px;
 }
