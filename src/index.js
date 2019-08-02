@@ -1,4 +1,7 @@
 import './style.scss'
+import './js/navigation'
+import './js/map'
+import './js/swiper'
 
 // Custom js components
 /* import * as VideoPlayer from './js/video_controls'
@@ -9,7 +12,6 @@ import * as Accordion from './js/accordions'
 import * as Select from './js/select'
 import * as ClassToggler from './js/classToggler'
 import * as FileUpload from './js/fileUpload' */
-import './js/navigation'
 
 
 // import Audio from './js/audio'
@@ -34,5 +36,6 @@ audioButton.addEventListener('click', () => {
   audio.changeSource(audioSource);
 });
  */
+
 
 

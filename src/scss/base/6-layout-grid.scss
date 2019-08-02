@@ -1,4 +1,21 @@
 //Define gutters for site width
-$grid-column: 60px;
-$grid-gap: 20px; 
+$grid-columns: 12;
+$grid-column-size: 80px;
+$grid-column-gutter: 20px;
+$grid-max-width: 1180px;
 
+
+.container {
+    // background-color: $color-primary;
+    width: 100%;
+    max-width: $grid-max-width;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

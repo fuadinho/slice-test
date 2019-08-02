@@ -32,12 +32,14 @@
 /***********************
 * ELEMENTS  
 ***********************/
+@import "scss/elements/swiper.scss";
 
 /***********************
 * LAYOUT  
 ***********************/
 @import 'scss/layout/_header',
-        'scss/layout/_navigation';
+        'scss/layout/_navigation',
+        'scss/layout/footer.scss';
 
 /***********************
 * SECTIONS  !sections are not predefined
@@ -46,7 +48,12 @@
 @import 'scss/sections/_hero',
         'scss/sections/_about',
         'scss/sections/info',
-        'scss/sections/portfolio';
+        'scss/sections/portfolio',
+        'scss/sections/services.scss',
+        'scss/sections/video.scss',
+        'scss/sections/logos.scss',
+        'scss/sections/contact.scss',
+        'scss/sections/google-map.scss';
 
 /***********************
 * PAGES  !pages are not predefined
@@ -58,3 +65,5 @@
 /***********************
 * VENDORS Vendor specific css, copied in scss files
 ***********************/
+
+// @import 'scss/vendors/swiper';
